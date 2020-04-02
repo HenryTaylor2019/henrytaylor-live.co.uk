@@ -5,6 +5,7 @@ import PlayerContextProvider from './contexts/PlayerContext';
 import TeamSize from './components/TeamSize';
 import Header from './components/Header';
 import PlayerNameForm from './components/PlayerNameForm';
+import PlayerTable from './components/PlayerTable';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <PlayerContextProvider>
         <TeamSize />
         <PlayerNameForm />
+        <PlayerTable />
 
       </PlayerContextProvider>
     </div>
