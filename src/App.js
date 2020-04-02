@@ -1,24 +1,19 @@
 import React from 'react';
-import PlayerContextProvider from './contexts/PlayerContext';
+// import PlayerContextProvider from './contexts/PlayerContext';
 
 
-import TeamSize from './components/TeamSize';
-import Header from './components/Header';
-import PlayerNameForm from './components/PlayerNameForm';
-import PlayerTable from './components/PlayerTable';
-import Tournament from './components/Tournament';
+// import TeamSize from './components/TeamSize';
+// import Header from './components/Header';
+// import PlayerNameForm from './components/PlayerNameForm';
+// import PlayerTable from './components/PlayerTable';
+// import Tournament from './components/Tournament';
+import ComponentHandler from './ComponentHandler';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <PlayerContextProvider>
-        <TeamSize />
-        <PlayerNameForm />
-        <PlayerTable />
-        <Tournament />
-      </PlayerContextProvider>
+      <ComponentHandler />
     </div>
   );
 }
