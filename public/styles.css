@@ -1,0 +1,59 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+.center{
+    text-align: center;
+  }
+  
+  .sub-form{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto 40%;
+  }
+  
+  button{
+    padding-top: 10px;
+  }
+  
+  .table-data{
+    margin: auto 40%;
+    text-align: center;
+    /* width: 40%; */
+  }
+  
+  .teams-div{
+    padding-top: 50px;
+    text-align: center;
+    margin: auto ;
+    /* border: 1px black solid; */
+  }
+  
+  .teams-header{
+    text-align: center;
+    margin: auto ;
+    /* border: 1px black solid; */
+  }
+  
+  h1{
+    text-align: center;
+  }
+  
+  .dropdown{
+    text-align: center;
+    margin: auto 40%;
+  
+  }
+  
