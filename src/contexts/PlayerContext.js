@@ -10,7 +10,7 @@ class PlayerContextProvider extends Component {
         submittedPlayers: [],
         randomPlayer: '',
         team: [],
-        // teamB: [],
+
     }
 
     handleNumber = (e) => {
@@ -49,7 +49,7 @@ class PlayerContextProvider extends Component {
     }
 
     handleTeams = (e) => {
-        let half = Math.floor(this.state.players.length / 2);
+  
         this.setState({
            playerName: "",
            players: [],
@@ -59,7 +59,7 @@ class PlayerContextProvider extends Component {
 
     handleShuffle = (e) => {
  
-        function shuffle(array) {
+        let shuffle = (array) => {
             var ctr = array.length, temp, index;
 
             while (ctr > 0) {
@@ -82,9 +82,6 @@ class PlayerContextProvider extends Component {
         return (
             <PlayerContext.Provider value={{ 
                 ...this.state, 
-                // noOfPlayers: this.state.noOfPlayers,
-                // players: this.state.players,
-                // submittedPlayers: this.state.submittedPlayers,
                 handleNumber: this.handleNumber, 
                 handleInput: this.handleInput,
                 handleSubmit: this.handleSubmit,
