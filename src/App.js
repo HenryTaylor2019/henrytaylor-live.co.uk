@@ -1,4 +1,4 @@
-import React, { createContext, Component } from 'react';
+import React from 'react';
 import PlayerContextProvider from './contexts/PlayerContext';
 
 
@@ -6,6 +6,7 @@ import TeamSize from './components/TeamSize';
 import Header from './components/Header';
 import PlayerNameForm from './components/PlayerNameForm';
 import PlayerTable from './components/PlayerTable';
+import Tournament from './components/Tournament';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <TeamSize />
         <PlayerNameForm />
         <PlayerTable />
-
+        <Tournament />
       </PlayerContextProvider>
     </div>
   );

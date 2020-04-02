@@ -7,7 +7,7 @@ class PlayerNameForm extends Component {
 
 
     render() {
-        const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, playerNamesArr } = this.context;
+        const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players } = this.context;
 
         let warningMessage;
 
@@ -31,7 +31,7 @@ class PlayerNameForm extends Component {
                                 <label>Enter Names</label>
                                 <input className="center sub-form" value={playerName}  type="text" onChange={handleInput} />
 
-                                {noOfPlayers <= playerNamesArr.length ? null :
+                                {noOfPlayers <= players.length ? null :
                                 <button className="ui button" onClick={handleSubmit}>Add Player</button>
                              }
                             </div>

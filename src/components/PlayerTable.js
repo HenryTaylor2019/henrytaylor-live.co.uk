@@ -7,7 +7,7 @@ class PlayerTable extends Component {
 
 
     render() {
-        const { playerNamesArr } = this.context;
+        const { players } = this.context;
         const { noOfPlayers } = this.context;
         const { handleTeams } = this.context;
 
@@ -17,7 +17,7 @@ class PlayerTable extends Component {
                 <table className="ui celled table">
                     <tbody >
                         {
-                            playerNamesArr.map((name, index) => (
+                            players.map((name, index) => (
                                 <tr key={index <= noOfPlayers - 1 ? index + 1 : index}>
                                     <td >{index + 1}</td>
                                     <td className="table-data">{name}</td>
@@ -26,7 +26,7 @@ class PlayerTable extends Component {
                         }
                     </tbody>
                 </table>
-                {playerNamesArr.length >= noOfPlayers && playerNamesArr.length > 0 ? 
+                {players.length >= noOfPlayers && players.length > 0 ? 
                 <button className="ui secondary button" onClick={handleTeams}>Make Game</button>
                 : null}
             </div>
