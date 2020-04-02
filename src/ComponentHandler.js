@@ -14,12 +14,20 @@ class ComponentHandler extends Component {
         const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
 
         return (
-            <div className="App">
+            <div>
                 <Header />
                 <PlayerContextProvider>
-                    <TeamSize />
-                    <PlayerNameForm />
-                    <PlayerTable />
+                    <div className="card main-form">
+                        <div className="">
+                            <TeamSize />
+                        </div>
+                        <div className="">
+                            <PlayerNameForm />
+                        </div>
+                        <div className="">
+                            <PlayerTable />
+                        </div>
+                    </div>
                     <Tournament />
                 </PlayerContextProvider>
             </div>

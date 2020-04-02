@@ -9,12 +9,10 @@ class Tournament extends Component {
 
         let visibility;
 
-        if (team.length < 4) {
-            visibility = "invisible"
-        } else  {
-            visibility = "d-flex justify-content-center"
-        }
-        
+        team.length === 4 || team.length === 6 ? visibility = "d-flex justify-content-center" : visibility = "invisible";
+        // team.length === 8 || team.length === 10 ? visibility = "d-flex justify-content-center" : visibility = "invisible";
+        // team.length === 12 || team.length === 14 ? visibility = "d-flex justify-content-center" : visibility = "invisible";
+
 
         // Allow user to randomise players
         let shuffle = (array) => {
@@ -35,27 +33,36 @@ class Tournament extends Component {
         return (
             <>
                 <div>
-                    <div className={visibility}>
+                    <div className={visibility} >
                         <h3>{playerShuffle[0]}</h3>
-                        <h3> Vs </h3>
+                        <div className="img-div">
+                            <img src="https://freesvg.org/img/Paddle-1294900.png" />
+                        </div>
                         <h3>{playerShuffle[1]}</h3>
                     </div>
 
                     <div className={visibility}>
                         <h3>{playerShuffle[2]}</h3>
-                        <h3> Vs </h3>
+                        <div className="img-div">
+                            <img src="https://freesvg.org/img/Paddle-1294900.png" />
+                            
+                        </div>
                         <h3>{playerShuffle[3]}</h3>
                     </div>
 
                     <div className={visibility}>
                         <h3>{playerShuffle[4]}</h3>
-                        <h3> Vs </h3>
+                        <div className="img-div">
+                            <img src="https://freesvg.org/img/Paddle-1294900.png" />
+                        </div>
                         <h3>{playerShuffle[5]}</h3>
                     </div>
 
                     <div className={visibility}>
                         <h3>{playerShuffle[6]}</h3>
-                        <h3> Vs </h3>
+                        <div className="img-div">
+                            <img src="https://freesvg.org/img/Paddle-1294900.png" />
+                        </div>
                         <h3>{playerShuffle[7]}</h3>
                     </div>
                 </div>

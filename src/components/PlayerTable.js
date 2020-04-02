@@ -5,7 +5,6 @@ import { PlayerContext } from '../contexts/PlayerContext';
 class PlayerTable extends Component {
     static contextType = PlayerContext;
 
-
     render() {
         const { players } = this.context;
         const { noOfPlayers } = this.context;
@@ -31,7 +30,7 @@ class PlayerTable extends Component {
                 : null}
             </div>
         )
-    }
+    };
 }
 
 export default PlayerTable;

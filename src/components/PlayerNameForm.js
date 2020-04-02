@@ -5,7 +5,6 @@ import { PlayerContext } from '../contexts/PlayerContext';
 class PlayerNameForm extends Component {
     static contextType = PlayerContext;
 
-
     render() {
         const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
 
@@ -22,19 +21,20 @@ class PlayerNameForm extends Component {
         }
 
         return (
-            <div className="center sub-form">
+            <div className="sub-form">
                 <div className="ui form" onSubmit={handleSubmit}>
                     <form>
                         {warningMessage || handleTeams === true ? <p>{warningMessage}</p> :
                             <div>
 
-                                <label>Enter Names</label>
                                 {noOfPlayers <= players.length || team.length > !0 ? null :
                                     <div>
-                                        <input className="center sub-form" value={playerName} type="text" onChange={handleInput} />
+                                        <label>Enter Names</label>
 
-
-                                        <button className="ui button" onClick={handleSubmit}>Add Player</button>
+                                        <input className="sub-form" type="text" value={playerName} onChange={handleInput} />
+                                        <div className="button">
+                                            <button className="btn btn-primary" onClick={handleSubmit}>Add Player</button>
+                                        </div>
                                     </div>
                                 }
                             </div>

@@ -11,10 +11,24 @@ input[type=number] {
 }
 
 
-
-
 .center{
     text-align: center;
+
+  }
+
+  .header{
+    text-align: center;
+    margin-top: 30px;
+    /* margin: auto 300px; */
+  }
+
+  .main-form{
+    text-align: center;
+    /* width: 100%; */
+    /* width: 80%; */
+    border: 1px solid black;
+    /* position: relative; */
+    margin: auto 25%;
   }
   
   .sub-form{
@@ -24,8 +38,11 @@ input[type=number] {
     margin: auto 40%;
   }
   
-  button{
-    padding-top: 10px;
+
+  .button, button{
+    text-align: center;
+
+    margin-top: 20px;
   }
   
   .table-data{
@@ -49,6 +66,13 @@ input[type=number] {
   
   h1{
     text-align: center;
+    font-size: 52px;
+    font-family: 'Do Hyeon', sans-serif;
+  }
+
+  p, label, td, input  {
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
   }
   
   .dropdown{
@@ -60,5 +84,15 @@ input[type=number] {
   .invisible {
     display: none;
     visibility: hidden;
+}
+
+.img-div {
+  text-align: center;
+  width: 20%;
+  
+}
+
+img {
+  width: 150px;
 }
   

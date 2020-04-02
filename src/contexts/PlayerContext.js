@@ -6,11 +6,10 @@ class PlayerContextProvider extends Component {
     state = {
         playerName: '',
         players: [],
-        noOfPlayers: 0,
+        noOfPlayers: null,
         submittedPlayers: [],
         randomPlayer: '',
         team: [],
-
     }
 
     handleNumber = (e) => {
@@ -45,7 +44,6 @@ class PlayerContextProvider extends Component {
                 this.state.players,]
         })
         e.preventDefault();
-
     }
 
     handleTeams = () => {

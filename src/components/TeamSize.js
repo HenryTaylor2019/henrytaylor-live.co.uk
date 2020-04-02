@@ -6,15 +6,14 @@ class TeamSize extends Component {
     render() {
         const { handleNumber, noOfPlayers, players, team } = this.context;
    
-
         return (
-            <div className="center sub-form">
+            <div className="sub-form">
                 <form className="ui form">
 
                     {players.length > 0 || team.length ? <p>You have chosen {noOfPlayers} players</p> :
                         <div>
                             <label>Enter No. of Players</label>
-                            <input className="center sub-form" type="number" value={noOfPlayers} onChange={handleNumber} min="0" />
+                            <input className="sub-form" type="number" value={noOfPlayers} onChange={handleNumber} min="0" />
                         </div>
                     }
                 </form>
