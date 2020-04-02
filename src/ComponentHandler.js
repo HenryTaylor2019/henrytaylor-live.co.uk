@@ -11,6 +11,8 @@ import Tournament from './components/Tournament';
 
 class ComponentHandler extends Component {
     render() {
+        const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
+
         return (
             <div className="App">
                 <Header />

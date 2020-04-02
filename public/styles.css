@@ -56,4 +56,9 @@ input[type=number] {
     margin: auto 40%;
   
   }
+
+  .invisible {
+    display: none;
+    visibility: hidden;
+}
   

@@ -14,7 +14,7 @@ class TeamSize extends Component {
                     {players.length > 0 || team.length ? <p>You have chosen {noOfPlayers} players</p> :
                         <div>
                             <label>Enter No. of Players</label>
-                            <input className="center sub-form" type="number" onChange={handleNumber} min="0" />
+                            <input className="center sub-form" type="number" value={noOfPlayers} onChange={handleNumber} min="0" />
                         </div>
                     }
                 </form>

@@ -48,7 +48,7 @@ class PlayerContextProvider extends Component {
 
     }
 
-    handleTeams = (e) => {
+    handleTeams = () => {
   
         this.setState({
            playerName: "",
@@ -57,7 +57,7 @@ class PlayerContextProvider extends Component {
         })
     }
 
-    handleShuffle = (e) => {
+    handleShuffle = () => {
  
         let shuffle = (array) => {
             var ctr = array.length, temp, index;

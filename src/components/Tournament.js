@@ -5,8 +5,18 @@ class Tournament extends Component {
     static contextType = PlayerContext;
 
     render() {
-        const { team, handleShuffle } = this.context;
+        const { team, handleShuffle, players } = this.context;
 
+        let visibility;
+
+        if (team.length < 4) {
+            visibility = "invisible"
+        } else  {
+            visibility = "d-flex justify-content-center"
+        }
+        
+
+        // Allow user to randomise players
         let shuffle = (array) => {
             var ctr = array.length, temp, index;
 
@@ -21,10 +31,44 @@ class Tournament extends Component {
         }
 
         let playerShuffle = shuffle(team);
- 
+
         return (
             <>
-                {team.length > 0 ? 
+                <div>
+                    <div className={visibility}>
+                        <h3>{playerShuffle[0]}</h3>
+                        <h3> Vs </h3>
+                        <h3>{playerShuffle[1]}</h3>
+                    </div>
+
+                    <div className={visibility}>
+                        <h3>{playerShuffle[2]}</h3>
+                        <h3> Vs </h3>
+                        <h3>{playerShuffle[3]}</h3>
+                    </div>
+
+                    <div className={visibility}>
+                        <h3>{playerShuffle[4]}</h3>
+                        <h3> Vs </h3>
+                        <h3>{playerShuffle[5]}</h3>
+                    </div>
+
+                    <div className={visibility}>
+                        <h3>{playerShuffle[6]}</h3>
+                        <h3> Vs </h3>
+                        <h3>{playerShuffle[7]}</h3>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                {/* {team.length > 0 ? 
                 <div> 
                     <table className="teams-div ">
                         <tbody >
@@ -53,14 +97,15 @@ class Tournament extends Component {
                                 <td>{playerShuffle[7]}</td>
                                 <td>{playerShuffle[8]}</td>
                             </tr>
+               
                         </tbody>
                     </table>
                     <div className="teams-div">
                     <button className="ui secondary button" onClick={handleShuffle}>Shuffle</button>
                     </div>
                 </div>
-                : null }
-      
+                : null } */}
+
             </>
         )
     }
