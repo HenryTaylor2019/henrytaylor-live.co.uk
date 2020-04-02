@@ -24,13 +24,14 @@ class Tournament extends Component {
  
         return (
             <>
-         
+                {team.length > 0 ? 
                 <div> 
-                    <table className="teams-div">
+                    <table className="teams-div ">
                         <tbody >
                             <tr>
-                                <th>Team A</th>
-                                <th>Team B</th>
+                                <th scope="col"><h3>Team A</h3></th>
+                                <th scope="col"><h3>Team B</h3></th>
+                                <th scope="col"></th>
                             </tr>
                             <tr>
                                 <td>{playerShuffle[0]}</td>
@@ -55,9 +56,10 @@ class Tournament extends Component {
                         </tbody>
                     </table>
                     <div className="teams-div">
-                    <button onClick={handleShuffle}>Shuffle</button>
+                    <button className="ui secondary button" onClick={handleShuffle}>Shuffle</button>
                     </div>
                 </div>
+                : null }
       
             </>
         )
