@@ -7,6 +7,7 @@ import Header from './components/Header';
 import PlayerNameForm from './components/PlayerNameForm';
 import PlayerTable from './components/PlayerTable';
 import Tournament from './components/Tournament';
+import TournamentPage from './components/TournamentPage';
 
 
 class ComponentHandler extends Component {
@@ -27,8 +28,10 @@ class ComponentHandler extends Component {
                         <div className="">
                             <PlayerTable />
                         </div>
+                        
                     </div>
-                    <Tournament />
+                    {/* <Tournament /> */}
+                    <TournamentPage />
                 </PlayerContextProvider>
             </div>
         );

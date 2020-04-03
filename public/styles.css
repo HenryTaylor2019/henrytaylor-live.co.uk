@@ -19,15 +19,11 @@ input[type=number] {
   .header{
     text-align: center;
     margin-top: 30px;
-    /* margin: auto 300px; */
   }
 
   .main-form{
     text-align: center;
-    /* width: 100%; */
-    /* width: 80%; */
     border: 1px solid black;
-    /* position: relative; */
     margin: auto 25%;
   }
   
@@ -63,6 +59,14 @@ input[type=number] {
     margin: auto ;
     /* border: 1px black solid; */
   }
+
+  .tournament-div {
+    text-align: center;
+    /* border: 1px solid black; */
+    margin: auto 15%;
+    margin-top: 20px;
+    border: none;
+  }
   
   h1{
     text-align: center;
@@ -92,7 +96,100 @@ input[type=number] {
   
 }
 
-img {
+.img-header {
   width: 150px;
 }
   
+
+/* Tournament page */
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-face .pip:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.third-face .pip:nth-of-type(2) {
+  align-self: center;
+}
+
+.third-face .pip:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.fourth-face, .sixth-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-face .column, .sixth-face .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.fifth-face .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+/* OTHER STYLES */
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  flex-wrap: nowrap;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 150px;
+  height: 100px;
+  margin: 10px 0px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+

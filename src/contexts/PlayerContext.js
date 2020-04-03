@@ -10,6 +10,7 @@ class PlayerContextProvider extends Component {
         submittedPlayers: [],
         randomPlayer: '',
         team: [],
+        roundOneWinners: [],
     }
 
     handleNumber = (e) => {
@@ -75,6 +76,31 @@ class PlayerContextProvider extends Component {
         })
     }
 
+    handleReset = () => {
+
+        this.setState({
+            playerName: '',
+            players: [],
+            noOfPlayers: null,
+            submittedPlayers: [],
+            randomPlayer: '',
+            team: [],
+        })
+    }
+
+    handleRoundTwo = (e) => {
+        
+        this.setState({
+            roundOneWinners: [
+                ...this.state.roundOneWinners,
+                this.state.playerName
+            ]
+        });
+        e.preventDefault();
+    }
+
+
+
     render() {
       
         return (
@@ -86,6 +112,8 @@ class PlayerContextProvider extends Component {
                 handleGenerate: this.handleGenerate,
                 handleTeams: this.handleTeams,
                 handleShuffle: this.handleShuffle,
+                handleReset: this.handleReset,
+                handleRoundTwo: this.handleRoundTwo,
                 }}>
 
                 {this.props.children}

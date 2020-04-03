@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="header">
             <div>
-                <img src="https://freesvg.org/img/Paddle-1294900.png" />
+                <img className="img-header" src="https://freesvg.org/img/Paddle-1294900.png" alt="App Logo"/>
             </div>
             
             <h1>Ping Pong Tournament Generator</h1>
