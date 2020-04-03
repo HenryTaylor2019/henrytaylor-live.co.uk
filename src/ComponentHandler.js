@@ -8,6 +8,7 @@ import PlayerNameForm from './components/PlayerNameForm';
 import PlayerTable from './components/PlayerTable';
 import Tournament from './components/Tournament';
 import TournamentPage from './components/TournamentPage';
+import Footer from './components/Footer';
 
 
 class ComponentHandler extends Component {
@@ -15,7 +16,7 @@ class ComponentHandler extends Component {
         const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
 
         return (
-            <div>
+            <div className="main-body">
                 <Header />
                 <PlayerContextProvider>
                     <div className="card main-form">
@@ -32,6 +33,7 @@ class ComponentHandler extends Component {
                     </div>
                     {/* <Tournament /> */}
                     <TournamentPage />
+                    <Footer />
                 </PlayerContextProvider>
             </div>
         );

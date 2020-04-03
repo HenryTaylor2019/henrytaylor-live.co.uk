@@ -10,6 +10,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+body {
+  background-color: rgb(207, 206, 206);
+
+}
 
 .center{
     text-align: center;
@@ -18,13 +22,16 @@ input[type=number] {
 
   .header{
     text-align: center;
-    margin-top: 30px;
+    margin: 0px 0px 30px 0px;
+    
+    
   }
 
   .main-form{
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto 25%;
+
   }
   
   .sub-form{
@@ -37,9 +44,11 @@ input[type=number] {
 
   .button, button{
     text-align: center;
-
     margin-top: 20px;
+    font-family: 'Comic Neue', cursive;
+    color:rgb(231, 230, 230);
   }
+
   
   .table-data{
     margin: auto 40%;
@@ -70,13 +79,19 @@ input[type=number] {
   
   h1{
     text-align: center;
-    font-size: 52px;
+    font-size: 48px;
     font-family: 'Do Hyeon', sans-serif;
+    color: rgb(59, 59, 59);
   }
 
-  p, label, td, input  {
+  p, label, input  {
     font-family: 'Comic Neue', cursive;
     font-size: 18px;
+    color: rgb(59, 59, 59);
+  }
+  table {
+    text-align: center;
+    margin-bottom: 10px;
   }
   
   .dropdown{
@@ -98,6 +113,20 @@ input[type=number] {
 
 .img-header {
   width: 150px;
+}
+
+.footer {
+  text-align: center;
+  margin: auto 15%;
+  margin-top: 20px;
+  border: none;
+}
+.card {
+  background-color:rgb(231, 230, 230);
+}
+
+.warning {
+  color: red;
 }
   
 

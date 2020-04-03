@@ -8,7 +8,7 @@ class TeamSize extends Component {
    
         return (
             <div className="sub-form">
-                <form className="ui form">
+                <div className="ui form center">
 
                     {players.length > 0 || team.length ? <p>You have chosen {noOfPlayers} players</p> :
                         <div>
@@ -16,7 +16,7 @@ class TeamSize extends Component {
                             <input className="sub-form" type="number" value={noOfPlayers} onChange={handleNumber} min="0" />
                         </div>
                     }
-                </form>
+                </div>
             </div>
         )
     }

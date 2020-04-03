@@ -26,7 +26,7 @@ class PlayerTable extends Component {
                     </tbody>
                 </table>
                 {players.length >= noOfPlayers && players.length > 0 ? 
-                <button className="btn btn-primary" onClick={handleTeams}>Make Game</button>
+                <button className="ui secondary button" onClick={handleTeams}>Make Game</button>
                 : null}
             </div>
         )

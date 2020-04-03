@@ -10,7 +10,7 @@ class PlayerNameForm extends Component {
 
         let warningMessage;
 
-        if (noOfPlayers < 4 && noOfPlayers >= 0) {
+        if (noOfPlayers < 4 && noOfPlayers > 0) {
             warningMessage = "Add more players"
         } else if (noOfPlayers > 16) {
             warningMessage = "Too Many Players"
@@ -24,7 +24,7 @@ class PlayerNameForm extends Component {
             <div className="sub-form">
                 <div className="ui form" onSubmit={handleSubmit}>
                     <form>
-                        {warningMessage || handleTeams === true ? <p>{warningMessage}</p> :
+                        {warningMessage || handleTeams === true ? <p className="warning">{warningMessage}</p> :
                             <div>
 
                                 {noOfPlayers <= players.length || team.length > !0 ? null :
@@ -33,7 +33,7 @@ class PlayerNameForm extends Component {
 
                                         <input className="sub-form" type="text" value={playerName} onChange={handleInput} />
                                         <div className="button">
-                                            <button className="btn btn-primary" onClick={handleSubmit}>Add Player</button>
+                                            <button className="ui secondary button" onClick={handleSubmit}>Add Player</button>
                                         </div>
                                     </div>
                                 }

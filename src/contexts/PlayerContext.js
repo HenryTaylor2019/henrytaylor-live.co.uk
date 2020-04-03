@@ -85,20 +85,9 @@ class PlayerContextProvider extends Component {
             submittedPlayers: [],
             randomPlayer: '',
             team: [],
+            roundOneWinners: [],
         })
     }
-
-    handleRoundTwo = (e) => {
-        
-        this.setState({
-            roundOneWinners: [
-                ...this.state.roundOneWinners,
-                this.state.playerName
-            ]
-        });
-        e.preventDefault();
-    }
-
 
 
     render() {
@@ -113,7 +102,7 @@ class PlayerContextProvider extends Component {
                 handleTeams: this.handleTeams,
                 handleShuffle: this.handleShuffle,
                 handleReset: this.handleReset,
-                handleRoundTwo: this.handleRoundTwo,
+
                 }}>
 
                 {this.props.children}
