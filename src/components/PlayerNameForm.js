@@ -8,6 +8,8 @@ class PlayerNameForm extends Component {
     render() {
         const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
 
+        let addPlayers = (noOfPlayers - players.length);
+
         let warningMessage;
 
         if (noOfPlayers < 4 && noOfPlayers > 0) {
@@ -29,10 +31,10 @@ class PlayerNameForm extends Component {
 
                                 {noOfPlayers <= players.length || team.length > !0 ? null :
                                     <div>
-                                        <label>Enter Names</label>
+                                        <label>Enter {addPlayers} Names</label>
 
                                         <input className="sub-form" type="text" value={playerName} onChange={handleInput} />
-                                        <div className="button">
+                                        <div className="button-div">
                                             <button className="ui secondary button" onClick={handleSubmit}>Add Player</button>
                                         </div>
                                     </div>

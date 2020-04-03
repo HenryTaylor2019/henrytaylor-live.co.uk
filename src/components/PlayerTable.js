@@ -6,9 +6,7 @@ class PlayerTable extends Component {
     static contextType = PlayerContext;
 
     render() {
-        const { players } = this.context;
-        const { noOfPlayers } = this.context;
-        const { handleTeams } = this.context;
+        const { players, noOfPlayers, handleTeams } = this.context;
 
         return (
 

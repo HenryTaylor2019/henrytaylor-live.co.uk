@@ -6,14 +6,14 @@ import TeamSize from './components/TeamSize';
 import Header from './components/Header';
 import PlayerNameForm from './components/PlayerNameForm';
 import PlayerTable from './components/PlayerTable';
-import Tournament from './components/Tournament';
+// import Tournament from './components/Tournament';
 import TournamentPage from './components/TournamentPage';
 import Footer from './components/Footer';
 
 
 class ComponentHandler extends Component {
     render() {
-        const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
+        // const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
 
         return (
             <div className="main-body">
@@ -29,7 +29,6 @@ class ComponentHandler extends Component {
                         <div className="">
                             <PlayerTable />
                         </div>
-                        
                     </div>
                     {/* <Tournament /> */}
                     <TournamentPage />

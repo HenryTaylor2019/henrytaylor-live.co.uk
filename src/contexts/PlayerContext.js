@@ -10,7 +10,7 @@ class PlayerContextProvider extends Component {
         submittedPlayers: [],
         randomPlayer: '',
         team: [],
-        roundOneWinners: [],
+        suddenDeathTeam: [],
     }
 
     handleNumber = (e) => {
@@ -85,7 +85,29 @@ class PlayerContextProvider extends Component {
             submittedPlayers: [],
             randomPlayer: '',
             team: [],
-            roundOneWinners: [],
+            suddenDeathTeam: [],
+        })
+    }
+
+    handleSuddenDeath = () => {
+
+        let shuffle = (array) => {
+            var ctr = array.length, temp, index;
+
+            while (ctr > 0) {
+                index = Math.floor(Math.random() * ctr);
+                ctr--;
+                temp = array[ctr];
+                array[ctr] = array[index];
+                array[index] = temp;
+            }
+            return array;
+        }
+        let shuffled = shuffle(this.state.team)
+        let randomTwo = shuffled.slice(0, 2)
+
+        this.setState({
+            suddenDeathTeam: randomTwo
         })
     }
 
@@ -102,6 +124,7 @@ class PlayerContextProvider extends Component {
                 handleTeams: this.handleTeams,
                 handleShuffle: this.handleShuffle,
                 handleReset: this.handleReset,
+                handleSuddenDeath: this.handleSuddenDeath,
 
                 }}>
 

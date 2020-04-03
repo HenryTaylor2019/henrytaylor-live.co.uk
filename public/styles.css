@@ -42,13 +42,12 @@ body {
   }
   
 
-  .button, button{
+  .button-div{
     text-align: center;
     margin-top: 20px;
     font-family: 'Comic Neue', cursive;
     color:rgb(231, 230, 230);
   }
-
   
   .table-data{
     margin: auto 40%;
@@ -75,11 +74,18 @@ body {
     margin: auto 15%;
     margin-top: 20px;
     border: none;
+    padding: 15px 15px;
   }
   
   h1{
     text-align: center;
     font-size: 48px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: rgb(59, 59, 59);
+  }
+
+  h3 {
+    padding-top: 10px;
     font-family: 'Do Hyeon', sans-serif;
     color: rgb(59, 59, 59);
   }
@@ -109,6 +115,10 @@ body {
   text-align: center;
   width: 20%;
   
+}
+
+.space {
+  padding-top: 10px;
 }
 
 .img-header {

@@ -7,15 +7,17 @@ class Footer extends Component {
     
 
     render() {
-        const{handleReset, handleShuffle, team } = this.context;
+        const{handleReset, handleShuffle, team, handleSuddenDeath } = this.context;
         return (
             <div className="footer">
                 {team.length > 0 ?
                     <div>
                         <div className="end-buttons">
                             <button className="ui secondary button" onClick={handleShuffle}>Shuffle Players</button>
-
                             <button className="ui secondary button" onClick={handleReset}>New Tournament</button>
+                            <button className="ui secondary button" onClick={handleSuddenDeath}>Sudden Death</button>
+                            
+                            
                         </div>
                     </div>
                     : null}
