@@ -25,8 +25,6 @@ class PlayerContextProvider extends Component {
     }
 
     handleSubmit = (e) => {
-        
-
 
         this.setState({
             playerName: '',
@@ -39,7 +37,6 @@ class PlayerContextProvider extends Component {
     }
 
     handleGenerate = (e) => {
-        // let { players } = this.context;
         
         this.setState({
             submittedPlayers: [
@@ -113,7 +110,6 @@ class PlayerContextProvider extends Component {
         })
     }
 
-
     render() {
       
         return (
@@ -127,7 +123,6 @@ class PlayerContextProvider extends Component {
                 handleShuffle: this.handleShuffle,
                 handleReset: this.handleReset,
                 handleSuddenDeath: this.handleSuddenDeath,
-
                 }}>
 
                 {this.props.children}

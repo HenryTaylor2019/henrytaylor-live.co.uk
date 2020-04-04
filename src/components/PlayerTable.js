@@ -13,7 +13,7 @@ class PlayerTable extends Component {
             <div className="center table-data">
                 <table className="ui celled table">
                     <tbody >
-                        {
+                        {    
                             players.map((name, index) => (
                                 <tr key={index <= noOfPlayers - 1 ? index + 1 : index}>
                                     <td >{index + 1}</td>
@@ -23,6 +23,7 @@ class PlayerTable extends Component {
                         }
                     </tbody>
                 </table>
+                {/* Start game only when sufficiant players have been assigned */}
                 {players.length >= noOfPlayers && players.length > 0 ? 
                 <button className="ui secondary button" onClick={handleTeams}>Make Game</button>
                 : null}

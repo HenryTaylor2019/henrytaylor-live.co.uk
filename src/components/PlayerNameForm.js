@@ -10,10 +10,8 @@ class PlayerNameForm extends Component {
 
         let addPlayers = (noOfPlayers - players.length);
 
-        let nameEntered = playerName.length > 0;
-
         let warningMessage;
-
+        // Conditional managing winner message to be refactored 
         if (noOfPlayers < 4 && noOfPlayers > 0) {
             warningMessage = "Add more players"
         } else if (noOfPlayers > 16) {
@@ -25,17 +23,18 @@ class PlayerNameForm extends Component {
         }
 
         return (
-            <div className="sub-form">
+            <div className="gen-style">
                 <div className="ui form" >
                     <form>
                         {warningMessage || handleTeams === true ? <p className="warning">{warningMessage}</p> :
                             <div>
 
+                                {/* Manage visibilty to ensure players cannnot add players until team size has been decided */}
                                 {noOfPlayers <= players.length || team.length > !0 ? null :
                                     <div>
                                         <label>Enter {addPlayers} Names</label>
 
-                                        <input className="sub-form" type="text" value={playerName} onChange={handleInput} />
+                                        <input className="gen-style" type="text" value={playerName} onChange={handleInput} />
                                         <div className="button-div">
                                             <button className="ui secondary button" onClick={handleSubmit}>Add Player</button>
                                         </div>

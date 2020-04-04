@@ -10,7 +10,7 @@ class TournamentPage extends Component {
 
         let shuffle = (array) => {
             var ctr = array.length, temp, index;
-            // While statement to ensure random selection of players
+            // To ensure random selection of players
             while (ctr > 0) {
                 index = Math.floor(Math.random() * ctr);
                 ctr--;
