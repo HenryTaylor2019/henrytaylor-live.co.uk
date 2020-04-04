@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pingpong-team-generator/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/pingpong-team-generator/static/js/main.1355887d.chunk.js",
-    "main.js.map": "/pingpong-team-generator/static/js/main.1355887d.chunk.js.map",
+    "main.js": "/pingpong-team-generator/static/js/main.347da386.chunk.js",
+    "main.js.map": "/pingpong-team-generator/static/js/main.347da386.chunk.js.map",
     "runtime-main.js": "/pingpong-team-generator/static/js/runtime-main.ddabd565.js",
     "runtime-main.js.map": "/pingpong-team-generator/static/js/runtime-main.ddabd565.js.map",
     "static/js/2.dc2ecf12.chunk.js": "/pingpong-team-generator/static/js/2.dc2ecf12.chunk.js",
     "static/js/2.dc2ecf12.chunk.js.map": "/pingpong-team-generator/static/js/2.dc2ecf12.chunk.js.map",
     "index.html": "/pingpong-team-generator/index.html",
-    "precache-manifest.45bc0ac0f0f5da573c2d146c1b923b73.js": "/pingpong-team-generator/precache-manifest.45bc0ac0f0f5da573c2d146c1b923b73.js",
+    "precache-manifest.00fe3de5fb06fb7f7d5ce939150762eb.js": "/pingpong-team-generator/precache-manifest.00fe3de5fb06fb7f7d5ce939150762eb.js",
     "service-worker.js": "/pingpong-team-generator/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/pingpong-team-generator/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.dc2ecf12.chunk.js.LICENSE.txt": "/pingpong-team-generator/static/js/2.dc2ecf12.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ddabd565.js",
     "static/js/2.dc2ecf12.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.1355887d.chunk.js"
+    "static/js/main.347da386.chunk.js"
   ]
 }
