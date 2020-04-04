@@ -10,14 +10,14 @@ class PlayerTable extends Component {
 
         return (
 
-            <div className="center table-data">
+            <div className="center main-form">
                 <table className="ui celled table">
-                    <tbody >
+                    <tbody>
                         {    
                             players.map((name, index) => (
                                 <tr key={index <= noOfPlayers - 1 ? index + 1 : index}>
                                     <td >{index + 1}</td>
-                                    <td className="table-data">{name}</td>
+                                    <td>{name}</td>
                                 </tr>
                             ))
                         }

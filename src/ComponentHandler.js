@@ -13,22 +13,18 @@ import Footer from './components/Footer';
 
 class ComponentHandler extends Component {
     render() {
-        // const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
 
         return (
-            <div className="main-body">
+            <div>
                 <Header />
                 <PlayerContextProvider>
                     <div className="card main-form">
-                        <div className="">
-                            <TeamSize />
-                        </div>
-                        <div className="">
-                            <PlayerNameForm />
-                        </div>
-                        <div className="">
-                            <PlayerTable />
-                        </div>
+
+                        <TeamSize />
+
+                        <PlayerNameForm />
+
+                        <PlayerTable />
                     </div>
                     {/* <Tournament /> */}
                     <TournamentPage />

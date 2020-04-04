@@ -8,9 +8,9 @@ class TeamSize extends Component {
 
         return (
             <div>
-                <div className="ui form center">
+                <div className="ui form ">
                     {players.length > 0 || team.length ? <h3>{noOfPlayers} player game</h3> :
-                        <div className="space">
+                        <div className="center">
                             <label>Enter No. of Players</label>
                             <div className="gen-style">
                                 <input className="center" type="number" value={noOfPlayers} onChange={handleNumber} min="0" />

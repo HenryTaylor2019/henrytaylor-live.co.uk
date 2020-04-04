@@ -21,7 +21,7 @@ h1 {
   color: rgb(59, 59, 59);
 }
 
-h3 {
+h3, h4 {
   padding-top: 10px;
   font-family: 'Do Hyeon', sans-serif;
   color: rgb(59, 59, 59);
@@ -35,6 +35,10 @@ p, label, input {
 
 .center {
     text-align: center;
+}
+
+.input {
+  width: 30%;
 }
 
 .header {
