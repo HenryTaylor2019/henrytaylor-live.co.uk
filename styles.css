@@ -47,12 +47,12 @@ p, label, input {
 }
 
 img {
-  width: 40%;
+  width: 30px;
 }
 
-.img-header {
-  width: 40%
-}
+/* .img-header {
+  width: 0%
+} */
 
 .card {
   background-color:rgb(231, 230, 230);
