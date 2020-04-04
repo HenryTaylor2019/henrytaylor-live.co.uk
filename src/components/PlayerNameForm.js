@@ -23,7 +23,7 @@ class PlayerNameForm extends Component {
         }
 
         return (
-            <div className="">
+            <div className="gen-style2">
                 <div className="ui form" >
                     <form>
                         {warningMessage || handleTeams === true ? <p className="warning">{warningMessage}</p> :
@@ -34,7 +34,7 @@ class PlayerNameForm extends Component {
                                     <div>
                                         <label>Enter {addPlayers} Names</label>
 
-                                        <input className="gen-style" type="text" value={playerName} onChange={handleInput} />
+                                        <input className="gen-style2" type="text" value={playerName} onChange={handleInput} />
                                         <div className="button-div">
                                             <button className="ui secondary button" onClick={handleSubmit}>Add Player</button>
                                         </div>

@@ -7,7 +7,7 @@ class Footer extends Component {
 
 
     render() {
-        const { handleReset, handleShuffle, team, handleSuddenDeath } = this.context;
+        const { handleReset, handleShuffle, team, handleSuddenDeath, handleRoundTwo } = this.context;
         return (
             <div className="footer">
                 {team.length > 0 ?

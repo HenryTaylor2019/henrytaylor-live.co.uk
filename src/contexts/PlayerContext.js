@@ -85,6 +85,8 @@ class PlayerContextProvider extends Component {
             randomPlayer: '',
             team: [],
             suddenDeathTeam: [],
+            roundOneWinners: [],
+            roundTwoPlayers: []
         })
     }
 
@@ -109,6 +111,8 @@ class PlayerContextProvider extends Component {
             suddenDeathTeam: randomTwo
         })
     }
+
+
 
     render() {
       
