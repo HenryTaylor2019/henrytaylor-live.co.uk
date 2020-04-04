@@ -5,6 +5,7 @@ class TeamSize extends Component {
     static contextType = PlayerContext;
     render() {
         const { handleNumber, noOfPlayers, players, team } = this.context;
+        
 
         return (
             <div>

@@ -10,6 +10,8 @@ class PlayerNameForm extends Component {
 
         let addPlayers = (noOfPlayers - players.length);
 
+        let nameEntered = playerName.length > 0;
+
         let warningMessage;
 
         if (noOfPlayers < 4 && noOfPlayers > 0) {
@@ -24,7 +26,7 @@ class PlayerNameForm extends Component {
 
         return (
             <div className="sub-form">
-                <div className="ui form" onSubmit={handleSubmit}>
+                <div className="ui form" >
                     <form>
                         {warningMessage || handleTeams === true ? <p className="warning">{warningMessage}</p> :
                             <div>

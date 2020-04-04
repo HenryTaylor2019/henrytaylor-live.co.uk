@@ -26,6 +26,8 @@ class PlayerContextProvider extends Component {
 
     handleSubmit = (e) => {
         
+
+
         this.setState({
             playerName: '',
             players: [
