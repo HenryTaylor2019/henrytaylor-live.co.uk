@@ -15,7 +15,7 @@ class ComponentHandler extends Component {
     render() {
 
         return (
-            <div>
+            <div className="container-md">
                 <Header />
                 <PlayerContextProvider>
                     <div className="card main-form">
