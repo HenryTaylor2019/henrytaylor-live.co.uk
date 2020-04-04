@@ -46,9 +46,13 @@ p, label, input {
     margin: 0px 0px 30px 0px; 
 }
 
-/* img {
+img {
   width: 40%;
-} */
+}
+
+.img-header {
+  width: 40%
+}
 
 .card {
   background-color:rgb(231, 230, 230);
