@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8218d731b8ec4a4d05f75e949958f36a",
+    "revision": "dcc47af9723cb080b2a16906272b12e5",
     "url": "/pingpong-team-generator/index.html"
   },
   {
-    "revision": "55644dc7e92d0b3fe50a",
+    "revision": "141b1cfc40b5289ceec7",
     "url": "/pingpong-team-generator/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pingpong-team-generator/static/js/2.dc2ecf12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "55644dc7e92d0b3fe50a",
-    "url": "/pingpong-team-generator/static/js/main.9579a73c.chunk.js"
+    "revision": "141b1cfc40b5289ceec7",
+    "url": "/pingpong-team-generator/static/js/main.1f751dd8.chunk.js"
   },
   {
     "revision": "15ee95b0beee138d45f2",
