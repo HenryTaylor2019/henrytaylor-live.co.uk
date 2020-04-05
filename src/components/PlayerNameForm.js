@@ -22,10 +22,11 @@ class PlayerNameForm extends Component {
             warningMessage = "";
         }
 
+
         return (
             <div className="gen-style2">
                 <div className="ui form" >
-                    <form>
+                    <form onSubmit={null}>
                         {warningMessage || handleTeams === true ? <p className="warning">{warningMessage}</p> :
                             <div>
 

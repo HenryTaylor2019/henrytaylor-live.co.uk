@@ -25,7 +25,7 @@ class PlayerTable extends Component {
                 </table>
                 {/* Start game only when sufficiant players have been assigned */}
                 {players.length >= noOfPlayers && players.length > 0 ? 
-                <button className="ui secondary button" onClick={handleTeams}>Make Game</button>
+                <button className="ui secondary button" onClick={handleTeams}>Generate Game</button>
                 : null}
             </div>
         )
