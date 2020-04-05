@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/pingpong-team-generator/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/pingpong-team-generator/static/js/main.15bc73d1.chunk.js",
-    "main.js.map": "/pingpong-team-generator/static/js/main.15bc73d1.chunk.js.map",
+    "main.css": "/pingpong-team-generator/static/css/main.e5590579.chunk.css",
+    "main.js": "/pingpong-team-generator/static/js/main.b204694e.chunk.js",
+    "main.js.map": "/pingpong-team-generator/static/js/main.b204694e.chunk.js.map",
     "runtime-main.js": "/pingpong-team-generator/static/js/runtime-main.ddabd565.js",
     "runtime-main.js.map": "/pingpong-team-generator/static/js/runtime-main.ddabd565.js.map",
     "static/js/2.dc2ecf12.chunk.js": "/pingpong-team-generator/static/js/2.dc2ecf12.chunk.js",
     "static/js/2.dc2ecf12.chunk.js.map": "/pingpong-team-generator/static/js/2.dc2ecf12.chunk.js.map",
     "index.html": "/pingpong-team-generator/index.html",
-    "precache-manifest.9cccac7fb1c4a3a8117349726671df4f.js": "/pingpong-team-generator/precache-manifest.9cccac7fb1c4a3a8117349726671df4f.js",
+    "precache-manifest.58fdc75288c803f3464141163a9d7cc0.js": "/pingpong-team-generator/precache-manifest.58fdc75288c803f3464141163a9d7cc0.js",
     "service-worker.js": "/pingpong-team-generator/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/pingpong-team-generator/static/css/main.5ecd60fb.chunk.css.map",
+    "static/css/main.e5590579.chunk.css.map": "/pingpong-team-generator/static/css/main.e5590579.chunk.css.map",
     "static/js/2.dc2ecf12.chunk.js.LICENSE.txt": "/pingpong-team-generator/static/js/2.dc2ecf12.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ddabd565.js",
     "static/js/2.dc2ecf12.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.15bc73d1.chunk.js"
+    "static/css/main.e5590579.chunk.css",
+    "static/js/main.b204694e.chunk.js"
   ]
 }
