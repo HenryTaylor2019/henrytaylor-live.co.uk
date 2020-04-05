@@ -8,7 +8,7 @@ import PlayerTable from './components/PlayerTable';
 import TournamentPage from './components/TournamentPage';
 import Footer from './components/Footer';
 
-
+// Components managed here before rendering in app for styling amendments
 
 class ComponentHandler extends Component {
     render() {
