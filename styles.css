@@ -11,7 +11,7 @@ input[type=number] {
 }
 
 body {
-  background-color: rgb(207, 206, 206);
+  background-color: rgb(226, 226, 226);
 }
 
 h1 {
@@ -50,10 +50,6 @@ img {
   width: 18%;
 }
 
-/* .img-header {
-  width: 0%
-} */
-
 .card {
   background-color:rgb(234, 234, 234);
 }
@@ -90,7 +86,6 @@ img {
 }
 
 .table-data{
-  /* margin: auto 40%; */
   text-align: center;
 }
 
@@ -111,8 +106,6 @@ img {
   display: none;
   visibility: hidden;
 }
-
-
 
 .footer {
   text-align: center;
