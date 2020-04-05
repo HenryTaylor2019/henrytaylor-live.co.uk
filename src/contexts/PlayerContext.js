@@ -11,6 +11,9 @@ class PlayerContextProvider extends Component {
         randomPlayer: '',
         team: [],
         suddenDeathTeam: [],
+        roundOneWinners: '',
+        roundTwoPlayers: [],
+        roundTwoTeam: [],
     }
 
     handleNumber = (e) => {
@@ -37,7 +40,7 @@ class PlayerContextProvider extends Component {
     }
 
     handleGenerate = (e) => {
-        
+
         this.setState({
             submittedPlayers: [
                 ...this.state.submittedPlayers,
@@ -47,16 +50,16 @@ class PlayerContextProvider extends Component {
     }
 
     handleTeams = () => {
-  
+
         this.setState({
-           playerName: "",
-           players: [],
-           team: [...this.state.players],
+            playerName: "",
+            players: [],
+            team: [...this.state.players],
         })
     }
 
     handleShuffle = () => {
- 
+
         let shuffle = (array) => {
             var ctr = array.length, temp, index;
 
@@ -71,7 +74,7 @@ class PlayerContextProvider extends Component {
         }
 
         this.setState({
-           team: shuffle(this.state.team),
+            team: shuffle(this.state.team),
         })
     }
 
@@ -112,14 +115,40 @@ class PlayerContextProvider extends Component {
         })
     }
 
+    handleSubmitWinners = (e) => {
 
+        this.setState({ roundOneWinners: e.target.value });
+        e.preventDefault();
+    }
+
+    handleroundTwoPlayers = (e) => {
+
+        this.setState({
+            roundOneWinners: '',
+            roundTwoPlayers: [
+                ...this.state.roundTwoPlayers,
+                this.state.roundOneWinners
+            ]
+        });
+        e.preventDefault();
+    }
+
+    handleRoundTwoGame = (e) => {
+
+        this.setState({
+            playerName: "",
+            players: [],
+            roundTwoTeam: [...this.state.roundOneWinners],
+        })
+        e.preventDefault();
+    }
 
     render() {
-      
+
         return (
-            <PlayerContext.Provider value={{ 
-                ...this.state, 
-                handleNumber: this.handleNumber, 
+            <PlayerContext.Provider value={{
+                ...this.state,
+                handleNumber: this.handleNumber,
                 handleInput: this.handleInput,
                 handleSubmit: this.handleSubmit,
                 handleGenerate: this.handleGenerate,
@@ -127,7 +156,10 @@ class PlayerContextProvider extends Component {
                 handleShuffle: this.handleShuffle,
                 handleReset: this.handleReset,
                 handleSuddenDeath: this.handleSuddenDeath,
-                }}>
+                handleSubmitWinners: this.handleSubmitWinners,
+                handleroundTwoPlayers: this.handleroundTwoPlayers,
+                handleRoundTwoGame: this.handleRoundTwoGame,
+            }}>
 
                 {this.props.children}
             </PlayerContext.Provider>

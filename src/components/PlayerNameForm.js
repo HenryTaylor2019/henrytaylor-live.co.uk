@@ -33,7 +33,6 @@ class PlayerNameForm extends Component {
                                 {noOfPlayers <= players.length || team.length > !0 ? null :
                                     <div>
                                         <label>Enter {addPlayers} Names</label>
-
                                         <input className="gen-style2" type="text" value={playerName} onChange={handleInput} />
                                         <div className="button-div">
                                             <button className="ui secondary button" onClick={handleSubmit}>Add Player</button>
