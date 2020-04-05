@@ -6,7 +6,7 @@ class PlayerNameForm extends Component {
     static contextType = PlayerContext;
 
     render() {
-        const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team } = this.context;
+        const { handleInput, handleSubmit, playerName, noOfPlayers, handleTeams, players, team, handlestopReset} = this.context;
 
         let addPlayers = (noOfPlayers - players.length);
 
@@ -26,7 +26,7 @@ class PlayerNameForm extends Component {
         return (
             <div className="gen-style2">
                 <div className="ui form" >
-                    <form onSubmit={null}>
+                    <form onKeyPress={handlestopReset}>
                         {warningMessage || handleTeams === true ? <p className="warning">{warningMessage}</p> :
                             <div>
 
@@ -36,7 +36,9 @@ class PlayerNameForm extends Component {
                                         <label>Enter {addPlayers} Names</label>
                                         <input className="gen-style2" type="text" value={playerName} onChange={handleInput} />
                                         <div className="button-div">
-                                            <button className="ui secondary button" onClick={handleSubmit}>Add Player</button>
+                                            {playerName === '' ? null :
+                                                <button className="ui secondary button" onClick={handleSubmit}>Add Player</button>
+                                            }
                                         </div>
                                     </div>
                                 }

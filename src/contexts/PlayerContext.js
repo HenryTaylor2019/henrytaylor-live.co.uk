@@ -24,6 +24,11 @@ class PlayerContextProvider extends Component {
         e.preventDefault();
     }
 
+    handlestopReset = (e) => {
+        // Prevent user from submitting an empty string as name
+         e.key === 'Enter' && e.preventDefault(); 
+    }
+
     handleSubmit = (e) => {
 
         this.setState({
@@ -126,6 +131,7 @@ class PlayerContextProvider extends Component {
                 handleShuffle: this.handleShuffle,
                 handleReset: this.handleReset,
                 handleSuddenDeath: this.handleSuddenDeath,
+                handlestopReset: this.handlestopReset,
             }}>
 
                 {this.props.children}
