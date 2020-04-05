@@ -27,7 +27,7 @@ h3, h4 {
   color: rgb(59, 59, 59);
 }
 
-p, label, input, td {
+p, label, input {
   font-family: 'Comic Neue', cursive;
   font-size: 18px;
   color: rgb(59, 59, 59);
