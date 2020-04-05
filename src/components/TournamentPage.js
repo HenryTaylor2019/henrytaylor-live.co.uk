@@ -6,6 +6,7 @@ class TournamentPage extends Component {
 
     render() {
         const { team, suddenDeathTeam } = this.context;
+        // Manage visibility of matches depending on number of players
         let visible = team.length > 0 ? "card tournament-div" : null;
 
         let shuffle = (array) => {
